@@ -1,6 +1,7 @@
 const app = "I don't do much."
 
-  document.addEventListener('keydown', function(e) {
+  function dodger() {
+    document.addEventListener('keydown', function(e) {
       if (e.which === 37) {
         moveDodgerLeft()
       }
@@ -22,3 +23,7 @@ const app = "I don't do much."
         dodger.style.left = `${left + 1}px`
       }
     }
+  }
+  
+  dodger();
+    
